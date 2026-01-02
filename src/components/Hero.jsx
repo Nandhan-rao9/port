@@ -68,12 +68,7 @@ export default function Hero() {
           </div>
 
           {/* Academic info */}
-          <div className="text-white/80 text-sm mt-1">
-            4th Year · Electronics & Computer Engineering
-          </div>
-          <div className="text-white/70 text-sm">
-            Sreenidhi Institute of Science and Technology
-          </div>
+          
 
           {/* Commands */}
           <div className="mt-4 space-y-1 text-sm">

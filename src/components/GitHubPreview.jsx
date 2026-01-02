@@ -1,58 +1,54 @@
-import { MapPin, Mail, Users } from "lucide-react"
+import { ExternalLink, Building2 } from "lucide-react"
 
 export default function GitHubPreview() {
   return (
     <div className="hidden md:block">
-      <div className="rounded-xl border border-white/10 bg-[#0d1117] p-5 w-full max-w-sm">
-        
-        {/* Profile Image */}
+      <div className="w-full max-w-sm rounded-xl border border-white/10 bg-white/5 backdrop-blur p-5">
+
+        {/* Profile image */}
         <div className="flex justify-center">
           <img
             src="/profile.jpg"
             alt="Nandhan Rao"
-            className="w-32 h-32 rounded-full border border-white/10 object-cover"
+            className="w-28 h-28 rounded-full object-cover border border-white/10"
           />
         </div>
 
-        {/* Name */}
+        {/* Name + headline */}
         <div className="mt-4 text-center">
           <h3 className="text-lg font-semibold">Nandhan Rao</h3>
-          <p className="text-sm text-white/60">Nandhan-rao9 · he/him</p>
+          <p className="text-sm text-white/70">
+            AI Research Intern · Alpes.ai
+          </p>
         </div>
 
-        {/* Button */}
+        {/* Education */}
+        <div className="mt-3 text-sm text-white/60 text-center">
+          4th Year · Electronics & Computer Engineering<br />
+          Sreenidhi Institute of Science and Technology
+        </div>
+
+        {/* Company */}
+        <div className="mt-4 flex items-center justify-center gap-2 text-sm text-white/70">
+          <Building2 size={14} />
+          <span>Alpes.ai</span>
+        </div>
+
+        {/* CTA */}
         <a
-          href="https://github.com/Nandhan-rao9"
+          href="https://linkedin.com/in/nandhanrao"
           target="_blank"
           rel="noopener noreferrer"
           className="
-            mt-4 block w-full text-center text-sm
-            border border-white/15 rounded-md py-1.5
+            mt-5 flex items-center justify-center gap-2
+            rounded-md border border-white/15
+            py-2 text-sm font-medium
             hover:bg-white/5 transition
           "
         >
-          Open GitHub Profile
+          View LinkedIn Profile
+          <ExternalLink size={14} />
         </a>
-
-        {/* Info */}
-        <div className="mt-4 space-y-2 text-sm text-white/70">
-          <div className="flex items-center gap-2">
-            <Users size={14} />
-            <span>2 followers · 2 following</span>
-          </div>
-
-          <div className="flex items-center gap-2">
-            <MapPin size={14} />
-            <span>Hyderabad, India</span>
-          </div>
-
-          <div className="flex items-center gap-2">
-            <Mail size={14} />
-            <span className="break-all">
-              22311a1903@ecm.sreenidhi.edu.in
-            </span>
-          </div>
-        </div>
       </div>
     </div>
   )
