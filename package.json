@@ -3,17 +3,24 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
+
+  "engines": {
+    "node": ">=18"
+  },
+
   "scripts": {
     "dev": "vite",
     "build": "vite build --mode production",
     "preview": "vite preview"
   },
+
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "framer-motion": "^10.16.4",
     "lucide-react": "^0.300.0"
   },
+
   "devDependencies": {
     "vite": "^5.4.0",
     "@vitejs/plugin-react": "^4.2.0",
