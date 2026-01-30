@@ -1,6 +1,6 @@
 export const featuredProjects = [
   {
-    name: "NLP → SQL",
+    name: "DEVBOX",
     desc: "A developer's toolkit",
     tech: "React · Flask",
     image: "/projects/sql.png",
