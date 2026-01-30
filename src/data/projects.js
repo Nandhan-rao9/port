@@ -1,10 +1,10 @@
 export const featuredProjects = [
   {
     name: "NLP → SQL",
-    desc: "Convert natural language queries into executable SQL.",
-    tech: "React · Flask · NLP",
+    desc: "A developer's toolkit",
+    tech: "React · Flask",
     image: "/projects/sql.png",
-    live: "https://nlp-sql-two.vercel.app/"
+    live: "https://devbox1.vercel.app/"
   },
   {
     name: "LeetCode Tracker",
