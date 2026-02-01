@@ -3,7 +3,7 @@ export const featuredProjects = [
     name: "DEVBOX",
     desc: "A developer's toolkit",
     tech: "React · Flask",
-    image: "/projects/sql.png",
+    image: "/projects/devbox.png",
     live: "https://devbox1.vercel.app/"
   },
   {
