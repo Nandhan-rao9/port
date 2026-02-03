@@ -11,7 +11,7 @@ export const featuredProjects = [
     desc: "Self-hosted analytics dashboard for LeetCode progress.",
     tech: "React · Flask · AWS",
     image: "/projects/leet.png",
-    live: "http://51.20.54.96/"
+    live: "http://54.204.109.142/"
   },
   {
     name: "Cloud Community Club",
