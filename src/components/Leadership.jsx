@@ -23,8 +23,7 @@ export default function Leadership() {
             Student Alumni Relationship Cell
           </p>
           <p className="text-sm text-muted mt-3">
-            Worked with alumni data and organised 10+ events to create an impact
-            interactions.
+            Worked with alumni data and organised 10+ events to create an impact.
           </p>
         </div>
       </div>
