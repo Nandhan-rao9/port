@@ -3,19 +3,19 @@ import { motion } from "framer-motion"
 export default function AnimatedCard({ children, className = "" }) {
   return (
     <motion.div
-      initial={{ opacity: 0, y: 24 }}
+      initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
+      viewport={{ once: true, margin: "-50px" }}
       whileHover={{
-        y: -8,
-        scale: 1.015
+        y: -4,
+        scale: 1.01
       }}
       transition={{
         type: "spring",
         stiffness: 260,
         damping: 20
       }}
-      className={`relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 ${className}`}
+      className={`relative overflow-hidden rounded-xl sm:rounded-2xl border border-white/10 bg-white/5 ${className}`}
     >
       {/* light sweep */}
       <div className="pointer-events-none absolute inset-0 opacity-0 transition duration-300 group-hover:opacity-100">

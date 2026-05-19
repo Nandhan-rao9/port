@@ -14,7 +14,7 @@ export default function ProjectScale() {
   subtitle="Breadth across cloud, AI, and production systems."
 />
 
-      <div className="grid gap-4 grid-cols-2 sm:grid-cols-2 md:grid-cols-3">
+      <div className="grid gap-3 sm:gap-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
         {[
   {
     icon: Cloud,
@@ -44,25 +44,25 @@ export default function ProjectScale() {
   rel="noopener noreferrer"
   className="group block"
 >
-  <AnimatedCard className="p-4 md:p-6">
+  <AnimatedCard className="p-4 sm:p-5 md:p-6">
     <div className="flex items-start justify-between">
-      <Icon size={18} className="md:w-[22px] md:h-[22px] text-white/80"/>
+      <Icon size={18} className="sm:w-5 sm:h-5 md:w-[22px] md:h-[22px] text-white/80 shrink-0"/>
       <ExternalLink
-        size={16}
-        className="text-white/40 transition group-hover:text-white/70"
+        size={14}
+        className="sm:w-4 sm:h-4 text-white/40 transition group-hover:text-white/70 shrink-0"
       />
     </div>
 
-    <h3 className="mt-4 md:text-lg font-medium">
+    <h3 className="mt-3 sm:mt-4 text-base sm:text-lg font-medium">
       {item.title}
     </h3>
 
-    <p className="mt-1 text-xs md:text-sm text-muted">
+    <p className="mt-1 sm:mt-1.5 text-xs sm:text-sm text-muted">
       {item.desc}
     </p>
 
     {/* Hover CTA */}
-    <p className="mt-4 text-sm text-white/70 opacity-0 transition group-hover:opacity-100 md:hidden">
+    <p className="mt-3 sm:mt-4 text-xs sm:text-sm text-white/70 md:opacity-0 transition group-hover:opacity-100">
       Explore repositories →
     </p>
   </AnimatedCard>

@@ -20,10 +20,10 @@ export default function App() {
       <Cursor />
       <QuickNav />
 
-      <main className="px-4 sm:px-6 md:px-10 lg:px-16 space-y-16 sm:space-y-28">
+      <main className="px-4 sm:px-6 md:px-10 lg:px-16 py-6 sm:py-8 md:py-12 space-y-12 sm:space-y-16 md:space-y-20 lg:space-y-28 max-w-7xl mx-auto">
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_30%_20%,rgba(255,255,255,0.06),transparent_40%),radial-gradient(circle_at_80%_80%,rgba(255,255,255,0.04),transparent_40%)]" />
         <Hero />
-        
+
         <SkillsMarquee />
         <FeaturedProjects />
         <Experience />

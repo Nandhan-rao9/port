@@ -40,10 +40,10 @@ export default function Hero() {
   }, [step])
 
   return (
-    <section className="md:pt-10 md:pb-8">
+    <section className="pt-4 sm:pt-8 md:pt-10 pb-4 sm:pb-6 md:pb-8">
       <div
         className="
-          grid gap-8 items-start
+          grid gap-6 sm:gap-8 items-start
           grid-cols-1
           md:grid-cols-[1.15fr_0.85fr]
         "
@@ -54,15 +54,15 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           className="
   rounded-xl border border-white/10 bg-black/70 backdrop-blur
-  p-4 md:p-5 font-mono
-  max-w-full sm:max-w-lg md:max-w-xl
+  p-4 sm:p-5 md:p-6 font-mono
+  w-full
 "
         >
           {/* whoami */}
-          <div className="text-green-400">$ whoami</div>
+          <div className="text-sm sm:text-base text-green-400">$ whoami</div>
 
           {/* Name (typed, bigger) */}
-            <div className="text-xl md:text-3xl font-semibold tracking-tight mt-1 text-white/95">
+            <div className="text-lg sm:text-2xl md:text-3xl font-semibold tracking-tight mt-1 text-white/95 break-words">
             {typedName}
             <span className="animate-pulse">█</span>
           </div>
@@ -71,9 +71,9 @@ export default function Hero() {
           
 
           {/* Commands */}
-          <div className="mt-4 space-y-1 text-sm">
+          <div className="mt-3 sm:mt-4 space-y-1 text-xs sm:text-sm">
             {COMMANDS.slice(0, Math.max(0, step - 1)).map((line, i) => (
-              <div key={i}>
+              <div key={i} className="break-words">
                 {line.type === "cmd" ? (
                   <span className="text-green-400">{line.text}</span>
                 ) : (
@@ -85,7 +85,7 @@ export default function Hero() {
 
           {/* Cursor */}
           {step <= COMMANDS.length && (
-            <div className="text-green-400 animate-pulse mt-1">█</div>
+            <div className="text-green-400 animate-pulse mt-1 text-sm">█</div>
           )}
         </motion.div>
 
@@ -95,12 +95,12 @@ export default function Hero() {
       </div>
 
       {/* CTA */}
-      <div className="mt-4 flex flex-col gap-3 sm:flex-row sm:gap-8">
+      <div className="mt-4 sm:mt-6 flex flex-col sm:flex-row gap-3 sm:gap-6 md:gap-8">
 
         <Magnetic>
           <a
             href="#work"
-            className="group inline-flex items-center gap-2 text-sm font-medium text-white/90 transition"
+            className="group inline-flex items-center gap-2 text-sm sm:text-base font-medium text-white/90 transition"
           >
             <span>View work</span>
             <ArrowRight
@@ -115,7 +115,7 @@ export default function Hero() {
             href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="group inline-flex items-center gap-2 text-sm font-medium text-white/80 transition hover:text-white"
+            className="group inline-flex items-center gap-2 text-sm sm:text-base font-medium text-white/80 transition hover:text-white"
           >
             <span>Resume</span>
             <ExternalLink
@@ -126,7 +126,7 @@ export default function Hero() {
         </Magnetic>
 
       </div>
-      <div className="mt-4 md:hidden text-sm text-white/60">
+      <div className="mt-3 sm:mt-4 md:hidden text-xs sm:text-sm text-white/60">
   <a
     href="https://github.com/Nandhan-rao9"
     target="_blank"
