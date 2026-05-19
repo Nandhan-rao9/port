@@ -9,7 +9,9 @@ const NAME = "Nandhan Rao"
 const COMMANDS = [
   { type: "cmd", text: "$ skills --focus" },
   { type: "out", text: "AI • React • C++ • Python • Flask" },
-  { type: "cmd", text: "$ echo \"Building real-world systems\"" }
+  { type: "cmd", text: "$ echo \"Building real-world systems\"" },
+  { type: "cmd", text: "$ contact --phone" },
+  { type: "out", text: "+91 9392851715" }
 ]
 
 export default function Hero() {
@@ -95,7 +97,7 @@ export default function Hero() {
       </div>
 
       {/* CTA */}
-      <div className="mt-4 sm:mt-6 flex flex-col sm:flex-row gap-3 sm:gap-6 md:gap-8">
+      <div className="mt-4 sm:mt-6 flex flex-col sm:flex-row gap-3 sm:gap-6 md:gap-8 items-start sm:items-center flex-wrap">
 
         <Magnetic>
           <a
@@ -124,6 +126,13 @@ export default function Hero() {
             />
           </a>
         </Magnetic>
+
+        <a
+          href="tel:+919392851715"
+          className="inline-flex items-center gap-2 text-sm sm:text-base font-medium text-white/70 hover:text-white/90 transition"
+        >
+          <span>+91 9392851715</span>
+        </a>
 
       </div>
       <div className="mt-3 sm:mt-4 md:hidden text-xs sm:text-sm text-white/60">
