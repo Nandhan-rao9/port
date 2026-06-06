@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import Cursor from "./components/Cursor"
 import ScrollProgress from "./components/ScrollProgress"
 import Hero from "./components/Hero"
@@ -34,6 +35,7 @@ export default function App() {
         <Resume />
         <Contact />
       </main>
+      <Analytics />
     </>
   )
 }
